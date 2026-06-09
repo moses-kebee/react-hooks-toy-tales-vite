@@ -48,6 +48,7 @@ button {
   color: whitesmoke;
   font-size: 18px;
   justify-self: center;
+  cursor: pointer;
 }
 
 .buttonContainer {
@@ -71,6 +72,8 @@ button:hover {
 
 .add-toy-form {
   width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .submit {
@@ -84,6 +87,7 @@ button:hover {
   justify-self: center;
   font-family: monospace;
   margin: 3px;
+  cursor: pointer;
 }
 
 .submit:hover {
@@ -99,4 +103,85 @@ button:hover {
   font-size: 18px;
   font-family: monospace;
   margin: 3px;
+  padding: 5px;
+}
+
+/* ADD THESE STYLES FOR THE LAB */
+
+.App {
+  text-align: center;
+}
+
+.toy-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.add-button {
+  background-color: #e04b52;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  font-family: monospace;
+}
+
+.add-button:hover {
+  background-color: whitesmoke;
+  border: #e04b52 solid 1px;
+  color: #e04b52;
+}
+
+.like-btn {
+  background-color: #4ecdc4;
+  margin-right: 10px;
+}
+
+.like-btn:hover {
+  background-color: whitesmoke;
+  border: #4ecdc4 solid 1px;
+  color: #4ecdc4;
+}
+
+.del-btn {
+  background-color: #ff6b6b;
+}
+
+.del-btn:hover {
+  background-color: whitesmoke;
+  border: #ff6b6b solid 1px;
+  color: #ff6b6b;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Form styles */
+.add-toy-form h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.add-toy-form input {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: monospace;
+  font-size: 16px;
 }
