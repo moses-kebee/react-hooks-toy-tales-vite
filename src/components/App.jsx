@@ -7,14 +7,14 @@ function App() {
   const [toys, setToys] = useState([]);
   const [showForm, setShowForm] = useState(false);
 
-  // GET: Fetch all toys on page load
+  // GET: Fetch all toys
   useEffect(() => {
     fetch('http://localhost:3001/toys')
       .then(res => res.json())
       .then(data => setToys(data));
   }, []);
 
-  // POST: Add a new toy
+  // POST: Add new toy
   const handleAddToy = (newToy) => {
     fetch('http://localhost:3001/toys', {
       method: 'POST',
@@ -41,7 +41,7 @@ function App() {
       });
   };
 
-  // DELETE: Remove a toy
+  // DELETE: Remove toy
   const handleDeleteToy = (id) => {
     fetch(`http://localhost:3001/toys/${id}`, {
       method: 'DELETE'

@@ -14,8 +14,6 @@ function ToyForm({ onAddToy, onToggleForm }) {
     };
     
     onAddToy(newToy);
-    
-    // Reset form and close
     setName('');
     setImage('');
     onToggleForm();

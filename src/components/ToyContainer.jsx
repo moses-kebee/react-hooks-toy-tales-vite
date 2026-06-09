@@ -3,7 +3,7 @@ import ToyCard from './ToyCard';
 
 function ToyContainer({ toys, onIncreaseLikes, onDeleteToy }) {
   return (
-    <div className="toy-collection">
+    <div id="toy-collection" className="toy-collection">
       {toys.map((toy) => (
         <ToyCard 
           key={toy.id}
