@@ -13,7 +13,7 @@ function ToyCard({ toy, onIncreaseLikes, onDeleteToy }) {
     <div className="card" data-testid="toy-card">
       <h2>{toy.name}</h2>
       <img src={toy.image} alt={toy.name} className="toy-avatar" />
-      <p>{toy.likes} Likes</p>
+      <p>{toy.likes} Likes </p>
       <button className="like-btn" onClick={handleLikeClick}>
         {`Like <3`}
       </button>
